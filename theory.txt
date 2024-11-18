@@ -1,0 +1,37 @@
+=============CRUD=========
+
+C = Create
+R = Read
+U = Update
+D = Delete
+
+
+=> R = Read
+
+SELECT * FROM students;
+
+SELECT roll, class, email FROM students;
+
+SELECT * FROM students WHERE roll=1;
+
+SELECT name, class, email FROM students WHERE name="Rahim";
+
+SELECT * FROM students WHERE id = 1;
+
+=>U = Update
+
+UPDATE students SET name = 'Md Rakib' WHERE id = 4;
+
+UPDATE students SET name = 'Mohammad Rakib', roll= 1, class= 9, address='Uttara, Dhaka' WHERE id = 4;
+
+UPDATE students SET address = 'Gazipur, Chowrasta' WHERE phone='837534897';
+
+UPDATE students SET address = 'Gazipur, Chowrasta';
+
+=>D = DELETE
+
+DELETE FROM students WHERE id=4;
+
+DELETE FROM students WHERE phone = '837534897';
+
+DELETE FROM students;
